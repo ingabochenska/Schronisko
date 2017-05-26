@@ -6,13 +6,15 @@
 
 using namespace std;
 
-struct 
+struct Magazine
 {
 	int Dog_Food=10, Cat_Food=10, Beer=100;
+	
 };
 
 int main()
 {
+
 
 
 

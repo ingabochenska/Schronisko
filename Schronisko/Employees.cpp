@@ -11,6 +11,7 @@ Employees::Employees()
 
 int Employees::feed()
 {
-
-	return;
+	cout << "Animals in which loosebox you want to feed?" << endl;
+	cin >> 
+		return;
 }
