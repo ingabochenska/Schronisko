@@ -10,7 +10,7 @@ protected:
 	int amount;
 public:
 	Employees();
-	int feed();
+	void feed();
 
 
 	~Employees() {};

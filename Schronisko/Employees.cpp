@@ -9,9 +9,10 @@ Employees::Employees()
 	cout << "They are here to take care of animals";
 }
 
-int Employees::feed()
+void Employees::feed()
 {
+	int number;
 	cout << "Animals in which loosebox you want to feed?" << endl;
-	cin >> 
-		return;
+	cin >> number;
+	//board of boxes etc
 }
