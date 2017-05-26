@@ -7,16 +7,11 @@ class Employees
 {
 protected:
 	string staff;
+	int amount;
 public:
 	Employees();
+	int feed();
+
+
 	~Employees() {};
 };
-
-class Animal_Caretaker: public Employees
-{
-
-public:
-	Animal_Caretaker();
-
-};
-

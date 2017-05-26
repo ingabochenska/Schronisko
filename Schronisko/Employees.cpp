@@ -1,15 +1,16 @@
 #include "Employees.h"
 
 
-
 Employees::Employees()
 {
-
+	staff = "animal caretakers";
+	amount = 4;
+	cout << "You employ " << amount << " " << staff;
+	cout << "They are here to take care of animals";
 }
 
-
-Animal_Caretaker::Animal_Caretaker()
+int Employees::feed()
 {
-	staff = "animal caretaker";
 
+	return;
 }

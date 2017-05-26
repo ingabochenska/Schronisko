@@ -12,6 +12,11 @@ Dog::Dog()
 	type = "dog";
 
 }
+void Dog::Fill_box()
+{
+
+
+}
 
 Cat::Cat()
 {
@@ -19,9 +24,19 @@ Cat::Cat()
 	type = "cat";
 
 }
+void Cat::Fill_box()
+{
+
+
+}
 
 Student::Student()
 {
 	space = 0, 5;
 	type = "student";
+}
+void Student::Fill_box()
+{
+
+
 }
