@@ -21,10 +21,10 @@
     <ClCompile Include="Animals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Loosebox.cpp">
+    <ClCompile Include="Employees.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Employees.cpp">
+    <ClCompile Include="Room.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,10 @@
     <ClInclude Include="Animals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Loosebox.h">
+    <ClInclude Include="Employees.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Employees.h">
+    <ClInclude Include="Room.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
