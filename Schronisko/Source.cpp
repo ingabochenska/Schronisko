@@ -10,12 +10,16 @@ using namespace std;
 
 int main()
 {
+	int Size;
 	Magazine Magazine1{ 70, 100, 1000 };
 
-	Room *Room_;
+	Room *Room_ = new Room[10];
+	Size = Room_[0].Room_Size();
 	for (int i = 0; i < 10; i++)
 	{
-		Room_ = new Room[i];
+		system("cls");
+		Room_[i] = *new Room(Size);
+		cout << "What species do you want to accomodate in room " << i << " ?" << endl;
 		Room_[i].Accomodation();
 	}
 	Employees Employees;

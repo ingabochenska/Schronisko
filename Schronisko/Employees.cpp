@@ -5,15 +5,21 @@ Employees::Employees()
 {
 	staff = "animal caretakers";
 	amount = 4;
-	cout << "You employ " << amount << " " << staff;
-	cout << "They are here to take care of animals";
+	cout << endl<< "You employ " << amount << " " << staff<<endl;
+	cout << "They are here to take care of animals"<<endl;
 }
 
 void Employees::feed(Room *r, Magazine &M)
 {
 	int number;
-	cout << "Animals in which room you want to feed?" << endl;
+	cout << "Animals in which room you want to feed? (0-9)" << endl;
 	cin >> number;
+	if (number < 0 || number >= 10)
+	{
+		cout << "Wrong number chosen! My random number = ";
+		srand(time(NULL));
+		number = rand() % 10;
+	}
 	if (r[number].animal == "dog")
 		M.Dog_Food -= ((int)r[number].capacity)*r[number].portion_;
 	if (r[number].animal == "cat")
@@ -29,13 +35,14 @@ void Employees::feed(Room *r, Magazine &M)
 void Employees::fill_Magazine(Magazine &M)
 {
 	int a;
-	cout << "Which resources do you want to order from supplier?";
+	cout << "Which resources do you want to order from supplier?"<<endl;
+	cout << "1 - DogFood\n2 - CatFood\n3 - Beer"<<endl;
 	cin >> a;
 	switch (a)
 	{
-	case 1: M.Dog_Food += 35;
-	case 2: M.Cat_Food += 35;
-	case 3: M.Beer += 35;
+	case 1: M.Dog_Food += 35; break;
+	case 2: M.Cat_Food += 35; break;
+	case 3: M.Beer += 35; break;
 	default: cout << "Wrong choise" << endl;
 	}
 }

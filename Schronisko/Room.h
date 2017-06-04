@@ -9,16 +9,18 @@ class Room
 {
 	friend class Employees;
 protected:
-	int width, lenght, size, hunger = 0;
-	double capacity;
+	int width=0, lenght=0, size=0;
+	int hunger = 0;
+	double capacity=0;
 	string animal;
-	int portion_;
+	int portion_=0;
 	Dog * Puppy;
 	Cat * Kitty;
 	Student * Kid;
 public:
 	Room() {};
-	Room(int x, int y);
+	Room (int x);
+	int Room_Size();
 	void Accomodation();
-	~Room() {};
+	~Room();
 };

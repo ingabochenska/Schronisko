@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include "Room.h"
+#include <time.h>
 
 using namespace std;
 

@@ -39,7 +39,7 @@ Cat::Cat()
 
 Student::Student()
 {
-	space = 0, 5;
+	space = 0.5;
 	portion = 20;
 	type = "student";
 }

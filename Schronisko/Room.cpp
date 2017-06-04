@@ -1,16 +1,31 @@
 #include "Room.h"
 
+Room::Room(int x)
+{ 
+	this -> size = x;
+}
 
-Room::Room(int x, int y)
+int Room::Room_Size()
 {
-	size = x*y;
+	cout << "Now you can choose rooms' size" << endl;
+	cout << "Width = ";
+	cin >> width;
+	cout << "Lenght = ";
+	cin >> lenght;
+	if (width <= 0 || lenght <= 0 || width > 100 || lenght > 100)
+	{
+		cout << "Wrong size chosen! My size = 25";
+		size = 25;
+	}
+	else
+		size = width*lenght;
+	return size;
 }
 
 void Room:: Accomodation()
 {
 	int a;
-	system("cls");
-	cout << "What species do you want to accomodate?"<<endl;
+
 	cout << "1 - Dogs" << endl << "2 - Cats" << endl << "3 - Students" << endl;
 	cin >> a;
 	switch (a)
@@ -46,4 +61,14 @@ void Room:: Accomodation()
 
 	}
 
+}
+
+Room:: ~Room()
+{
+	delete[] Puppy;
+	delete[] Kitty;
+	delete[] Kid;
+	Puppy = 0;
+	Kitty = 0;
+	Kid = 0;
 }
