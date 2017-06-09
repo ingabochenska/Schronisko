@@ -10,7 +10,7 @@ class Room
 	friend class Employees;
 protected:
 	int width=0, lenght=0, size=0;
-	int hunger = 0;
+	int hunger = 0, happiness=3;
 	double capacity=0;
 	string animal;
 	int portion_=0;

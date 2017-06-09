@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	int Size;
+	int Size, activities = 15;
 	Magazine Magazine1{ 70, 100, 1000 };
 
 	Room *Room_ = new Room[10];
@@ -24,6 +24,8 @@ int main()
 	}
 	Employees Employees;
 	//wybór funkcji tutaj
+
+
 	Employees.feed(Room_, Magazine1);
 	Employees.fill_Magazine(Magazine1);
 	
