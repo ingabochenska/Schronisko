@@ -36,6 +36,8 @@ int main()
 			Gui.menu1();
 
 			cout << "What do you want to do? ";
+			cin.clear();
+			cin.sync();
 			cin >> choise;
 			switch (choise)
 			{
@@ -57,6 +59,7 @@ int main()
 			case 4:
 			{
 				cout << "Game over" << endl;
+				Sleep(2000);
 				return 0;
 			}
 			default:
