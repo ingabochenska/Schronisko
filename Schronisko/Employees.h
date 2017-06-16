@@ -20,7 +20,7 @@ protected:
 	int amount;
 public:
 	Employees();
-	void feed(Room *r, Magazine &M, int &act);// w mainie bêdzie przekazana tablica pomieszczeñ + sprawdzenie czy r nie jest za du¿e/za ma³e
+	void feed(Room *r, Magazine &M, int &act);
 	void play(Room *r, int &act);
 	void fill_Magazine(Magazine &M, int &act);
 
